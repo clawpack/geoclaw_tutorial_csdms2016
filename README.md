@@ -21,9 +21,9 @@ You will need a Fortran compiler and the scientific Python stack (Numpy and Matp
 [Anaconda Python distribution](https://docs.continuum.io/anaconda/index) is recommended.  Note that you need
 Python 2.7 or later (but not Python 3.x).
 
-Note that for GeoClaw you do not need to install PyClaw, so here are some simplified GeoClaw instructions:
+Note that for GeoClaw you do not need to build the Fortran components of PyClaw, so here are some **simplified GeoClaw instructions:**
 
-Download the tarfile clawpack-5.3.1.tar.gz from
+First download the tarfile clawpack-5.3.1.tar.gz from
   https://github.com/clawpack/clawpack/releases/
 
 Then unpack and set some environment variables:
@@ -50,3 +50,6 @@ Then you should be able to do:
 
 For more information, see the [GeoClaw documentation](http://www.clawpack.org/contents.html#geoclaw-geophysical-flows).
 
+## Examples
+
+Some examples will appear in this repository and on the SMC projects.  You might also want to look at the [Gallery of examples](http://www.clawpack.org/galleries.html) that are included in the Clawpack tar file, and [Jupyter (IPython) notebook examples](http://www.clawpack.org/notebooks.html) related to GeoCLaw.
