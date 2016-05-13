@@ -9,7 +9,7 @@ so that a project can be shared with you that has GeoClaw pre-installed.  You wi
 project from any web browser.  Each SageMathCloud (SMC) project is a virtual machine and SMC provides a variety of
 tools to interact with the project, including bash shells and Jupyter notebooks.  You will be able to run the
 code in single-thread mode and view results with a free account.  If you want better performance, or to use the 
-OpenMP parallelization of GeoClaw, or if you want to be able to transfer data or results in to our out of the project,
+OpenMP parallelization of GeoClaw, or if you want to be able to transfer data or results in to or out of the project,
 you can upgrade to a [paid account](https://cloud.sagemath.com/policies/pricing.html).
 
 ## Installing Clawpack to use GeoClaw on your own computer
