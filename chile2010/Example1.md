@@ -3,21 +3,21 @@
 
 These instructions will step you through running a sample tsunami simulation.
 
- 1. Make sure Clawpack is installed and your environment variables `CLAW`
-    and `PYTHONPATH` are both set to point to the top level directory.
+1. Make sure Clawpack is installed and your environment variables `CLAW`
+   and `PYTHONPATH` are both set to point to the top level directory.
 
- 2. You might want to create a separate directory for storing your own
-    GeoClaw experiments, to make it easier to later update to a newer
-    version of Clawpack.  In these examples we will assume `MYCLAW` is an
-    environment variable you have set to point to this directory.
+2. You might want to create a separate directory for storing your own
+   GeoClaw experiments, to make it easier to later update to a newer
+   version of Clawpack.  In these examples we will assume `MYCLAW` is an
+   environment variable you have set to point to this directory.
 
- 3. We will start with the sample tsunami model that is available 
-    in the directory `$CLAW/geoclaw/examples/tsunami/chile2010`.
-    Start by copying this directory to a new version you can play around
-    with:
+3. We will start with the sample tsunami model that is available 
+   in the directory `$CLAW/geoclaw/examples/tsunami/chile2010`.
+   Start by copying this directory to a new version you can play around
+   with:
 
-        cp -r $CLAW/geoclaw/examples/tsunami/chile2010 $MYCLAW/chile2010a
-        cd $MYCLAW/chile2010a
+        cp -r $CLAW/geoclaw/examples/tsunami/chile2010 $MYCLAW/chile2010
+        cd $MYCLAW/chile2010
 
 4. First take a look at the files in this directory. You can also
    view them online at 
@@ -40,14 +40,21 @@ These instructions will step you through running a sample tsunami simulation.
        solution.  See
        http://www.clawpack.org/setplot.html
 
-5. In principle you could type:
+5. In order to make this example run a bit faster, modify `setrun.py`
+   to only run to 1 hour (3600 seconds) and produce 6 frames of output
+   (every 10 minutes).  You will need to change lines 131, 132 to match this:
+
+        if clawdata.output_style==1:
+            # Output nout frames at equally spaced times up to tfinal:
+            clawdata.num_output_times = 6
+            clawdata.tfinal = 3600.0
+
+5. **DO NOT DO THIS**, but in principle you could type:
 
         make all
 
    and everything necessary will be done to compile and run the code and
    produce a set of plots.
-
-   But don't do this.
 
    Instead we will break this down into steps to understand what goes:
 
@@ -91,9 +98,12 @@ These instructions will step you through running a sample tsunami simulation.
    `html` files that facilitate viewing these plots.
 
    To view them, start by opening the file `_plots/_PlotIndex.html`
-   in web browser.
+   in a web browser.
 
-   Or on SageMathCloud (or a Mac) you can do:
+   On SageMathCloud, copy the link that appears at the end of the plotting
+   messages and open it in a new browser window.
+
+   On a Mac, you can simply do:
 
         open _plots/_PlotIndex.html
 
