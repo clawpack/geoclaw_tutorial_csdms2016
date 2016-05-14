@@ -3,13 +3,18 @@
 
 These instructions will step you through running a sample tsunami simulation.
 
+First follow the instructions in the main README.md file of this repository.
+
 1. Make sure Clawpack is installed and your environment variables `CLAW`
    and `PYTHONPATH` are both set to point to the top level directory.
-
+   
 2. You might want to create a separate directory for storing your own
    GeoClaw experiments, to make it easier to later update to a newer
    version of Clawpack.  In these examples we will assume `MYCLAW` is an
    environment variable you have set to point to this directory.
+
+   If you are running a SageMathCloud project set up for this tutorial,
+   there is already a directory `myclaw` that you could use for this purpose.
 
 3. We will start with the sample tsunami model that is available 
    in the directory `$CLAW/geoclaw/examples/tsunami/chile2010`.
