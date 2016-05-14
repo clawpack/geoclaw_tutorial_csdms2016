@@ -12,6 +12,8 @@ code in single-thread mode and view results with a free account.  If you want be
 OpenMP parallelization of GeoClaw, or if you want to be able to transfer data or results in to or out of the project,
 you can upgrade to a [paid account](https://cloud.sagemath.com/policies/pricing.html).
 
+See the file `SMC_setup/README.md` to get started with SageMathCloud.
+
 ## Installing Clawpack to use GeoClaw on your own computer
 
 If you prefer to install GeoClaw on your own laptop, you can follow the 
@@ -43,10 +45,7 @@ will be properly imported:
     cd $CLAW   # assuming this environment variable was properly set
     python setup.py symlink-only
 
-Then you should be able to do:
-
-    cd $CLAW/geoclaw/examples/tsunami/chile2010
-    make all
+Then see the file `chile2010/Example1.md` in this repository for the next steps.
 
 For more information, see the [GeoClaw documentation](http://www.clawpack.org/contents.html#geoclaw-geophysical-flows).
 
