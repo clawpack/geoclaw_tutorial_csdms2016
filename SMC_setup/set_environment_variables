@@ -1,0 +1,7 @@
+# execute these commands to set environment variables
+# See README.txt for how to add to .bashrc
+
+export CLAW=$HOME/clawpack-5.3.1
+export PYTHONPATH=$CLAW
+export MYCLAW=$HOME/myclaw
+
