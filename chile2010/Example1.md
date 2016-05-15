@@ -3,7 +3,9 @@
 
 These instructions will step you through running a sample tsunami simulation.
 
-First follow the instructions in the main README.md file of this repository.
+First follow the instructions in the main `README.md` file of this repository.
+
+On SageMathCloud, follow the instructions in `SMC_init/README.md`.
 
 1. Make sure Clawpack is installed and your environment variables `CLAW`
    and `PYTHONPATH` are both set to point to the top level directory.
