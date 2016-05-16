@@ -32,7 +32,7 @@ Do the following to set things up the first time you use the project:
 
 2. In the terminal:
 
-    bash $HOME/SMC_setup/setup.sh  # only do this once
+    source $HOME/SMC_setup/setup.sh  # only do this once
 
 After this, any time you start a new terminal even after the project has
 been closed and reopened, all the environment variables should be set

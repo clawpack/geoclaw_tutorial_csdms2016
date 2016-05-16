@@ -7,7 +7,7 @@
 # Then any new terminal you open will have these variables set.
 
 cat $HOME/SMC_setup/set_environment_variables >> $HOME/.bashrc
-source $HOME/.bashrc
+source $HOME/SMC_setup/set_environment_variables
 cd $CLAW
 python setup.py symlink-only
 
