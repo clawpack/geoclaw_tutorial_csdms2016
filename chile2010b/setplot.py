@@ -60,7 +60,7 @@ def setplot(plotdata=None):
     #-----------------------------------------
     # Figure for surface
     #-----------------------------------------
-    plotfigure = plotdata.new_plotfigure(name='Surface', figno=0)
+    plotfigure = plotdata.new_plotfigure(name='Full Domain', figno=0)
 
     # Set up for axes in this figure:
     plotaxes = plotfigure.new_plotaxes('pcolor')
