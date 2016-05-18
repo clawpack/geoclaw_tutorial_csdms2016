@@ -44,7 +44,7 @@ def setplot(plotdata=None):
     
     def fixup(current_data):
         import pylab
-        addgauges(current_data)
+        #addgauges(current_data)
         t = current_data.t
         t = t / 3600.  # hours
         pylab.title('Surface at %4.2f hours' % t, fontsize=20)
