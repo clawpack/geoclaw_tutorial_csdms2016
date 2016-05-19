@@ -49,5 +49,8 @@ properly.
 
 ## Next steps:
 
-- See chile2010/Example1.md
+- See http://depts.washington.edu/clawpack/geoclaw/tutorial_csdms2016/
+  for links to two notebooks that walk you through experiments in the 
+  directories `chile2010a` and `chile2010b`.
+
 
